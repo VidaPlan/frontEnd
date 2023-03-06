@@ -12,7 +12,6 @@ function Navbar() {
                     <Box className="cursor">
                     <Box mx={1} className="cursor">
                         
-                     
                     </Box>
                     </Box>
 

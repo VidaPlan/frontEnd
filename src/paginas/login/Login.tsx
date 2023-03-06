@@ -80,7 +80,10 @@ function Login() {
                             type="password"
                             fullWidth
                         />
-                        <Box marginTop={2} textAlign="center">
+                        <Grid container xs={12} justifyContent="space-between">
+                        <Link to="/home" className="text-decorator-none1">
+                                <Button className="botao2" type="submit" variant="contained" color="secondary">Cancelar</Button>
+                            </Link>
                                 <Button
                                     className="botao1"
                                     type="submit"
@@ -89,7 +92,7 @@ function Login() {
                                 >
                                     Logar
                                 </Button>
-                        </Box>
+                        </Grid>
                     </form>
                     <Box display="flex" justifyContent="center" marginTop={2}>
                         <Box marginRight={1}>
@@ -104,6 +107,7 @@ function Login() {
                             className="txts"
                         >
                             {" "}
+                            
                             <Link to="/cadastro" className="text-decorator-none">
                             Cadastre-se
                             </Link>
