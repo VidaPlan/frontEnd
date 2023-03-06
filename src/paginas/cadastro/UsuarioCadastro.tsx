@@ -53,9 +53,7 @@ function UsuarioCadastro() {
                 alert("As senhas não conferem.");
             }
         } catch {
-            alert(
-                "Dados inconsistentes. Favor verificar as informações de cadastro."
-            );
+            alert("Dados inconsistentes. Favor verificar as informações de cadastro."git );
         }
     }
     return (
