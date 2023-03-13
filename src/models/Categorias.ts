@@ -1,4 +1,5 @@
 interface Categorias{
+    
     id: number;
     tipo: string
 }

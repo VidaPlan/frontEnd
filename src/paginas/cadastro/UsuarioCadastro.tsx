@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import "./UsuarioCadastro.css";
 import Usuario from "../../models/Usuario";
 import { cadastroUsuario } from "../../service/Service";
-import UsuarioLogin from "../../models/UsuarioLogin";
 import { toast } from 'react-toastify';
 
 function UsuarioCadastro() {

@@ -108,18 +108,9 @@ function Login() {
                                 Ainda não é cadastrado?
                             </Typography>
                         </Box>
-                        <Typography
-                            variant="subtitle1"
-                            gutterBottom
-                            align="center"
-                            className="txts"
-                        >
-                            {" "}
-                            
                             <Link to="/cadastro" className="text-decorator-none">
-                            Cadastre-se
+                        <Typography variant="subtitle1" gutterBottom align="center" className="txts"> Cadastre-se</Typography>
                             </Link>
-                        </Typography>
                     </Box>
                 </Box>
             </Grid>

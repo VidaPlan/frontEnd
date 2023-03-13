@@ -42,10 +42,17 @@ function Navbar() {
                 </Link>
               </Box>
               <Box mx={1} className="cursor">
-              <Link to="/categorias" className="text-decorator-none1">
-                <Typography variant="h6" color="inherit">
-                  Categorias
-                </Typography>
+                <Link to="/categorias" className="text-decorator-none1">
+                  <Typography variant="h6" color="inherit">
+                    Categorias
+                  </Typography>
+                </Link>
+              </Box>
+              <Box mx={1} className="cursor">
+                <Link to="/produtos" className="text-decorator-none1">
+                  <Typography variant="h6" color="inherit">
+                    Produtos
+                  </Typography>
                 </Link>
               </Box>
               <Box mx={1} className="cursor">
@@ -58,10 +65,10 @@ function Navbar() {
                   Sobre nós
                 </Typography>
               </Box>
-                <Box mx={1} className="cursor" onClick={goLogout}>
-                  <Typography variant="h6" color="inherit">
-                    Logout
-                  </Typography>
+              <Box mx={1} className="cursor" onClick={goLogout}>
+                <Typography variant="h6" color="inherit">
+                  Logout
+                </Typography>
               </Box>
             </Box>
             <Box mx={2} display="flex" gap={2}>

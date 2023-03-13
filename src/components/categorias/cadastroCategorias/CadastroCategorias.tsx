@@ -11,13 +11,13 @@ import { Container, Typography, TextField, Button } from "@material-ui/core"
 function CadastroCategorias() {
     let navigate = useNavigate();
     const { id } = useParams<{id: string}>();
-      const token = useSelector<TokenState, TokenState['token']>(
+    const token = useSelector<TokenState, TokenState['token']>(
     (state)=>state.token
-  );
+);
     const [categoria, setCategorias] = useState<Categorias>({
         id: 0,
         tipo: ''
-    })
+})
 
     useEffect(() => {
         if (token == "") {
@@ -37,9 +37,9 @@ function CadastroCategorias() {
     async function findById(id: string) {
         buscaId(`/categorias/${id}`, setCategorias, {
             headers: {
-              'Authorization': token
+            'Authorization': token
             }
-          })
+        })
         }
 
         function updatedCategorias(e: ChangeEvent<HTMLInputElement>) {
@@ -81,13 +81,12 @@ function CadastroCategorias() {
         function back() {
             navigate('/categorias')
         }
-  return (
+return (
     <Container maxWidth="sm" className="topo">
     <form onSubmit={onSubmit}>
-      
-      <Typography variant="h3" align='center'>
+    <Typography variant="h3" align='center'>
             {categoria.id != 0 ? 'Edite a Categoria' : 'Cadastre uma Categoria  '}
-        </Typography>
+    </Typography>
         <TextField value={categoria.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)} id="tipo" label="Tipo" variant="outlined" name="tipo" margin="normal" fullWidth />
         <Button type="submit" variant="contained" color="primary">
             Finalizar
