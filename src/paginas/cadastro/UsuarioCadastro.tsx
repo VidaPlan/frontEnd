@@ -4,9 +4,9 @@ import { Box } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import "./UsuarioCadastro.css";
 import Usuario from "../../models/Usuario";
-import useLocalStorage from "react-use-localstorage";
 import { cadastroUsuario } from "../../service/Service";
 import UsuarioLogin from "../../models/UsuarioLogin";
+import { toast } from 'react-toastify';
 
 function UsuarioCadastro() {
     let navigate = useNavigate();
@@ -48,12 +48,18 @@ function UsuarioCadastro() {
         try {
             if (confirmarSenha === user.senha && confirmarSenha != "") {
                 await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
-                alert("Usuario cadastrado com sucesso");
+                toast.success("Usuario cadastrado com sucesso",{
+                    theme: "colored"
+                });
             } else {
-                alert("As senhas não conferem.");
+                toast.error("As senhas não conferem.",{
+                    theme: 'colored'
+                });
             }
         } catch {
-            alert("Dados inconsistentes. Favor verificar as informações de cadastro.");
+            toast.warn("Dados inconsistentes. Favor verificar as informações de cadastro.",{
+                theme: 'colored'
+            });
         }
     }
     return (
