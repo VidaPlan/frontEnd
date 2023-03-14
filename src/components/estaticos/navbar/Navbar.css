@@ -8,6 +8,27 @@
 
 }
 .barra{
-    background-color: #081C15 !important;
+    background-color: #245501 !important;
     width: 95.2vw !important;
+    
+}
+.form {
+    display: flex;
+    align-items: center;
+  }
+  
+.barraP{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+.botaoP{
+    background-color: white;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 5px;
 }
