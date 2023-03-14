@@ -48,7 +48,7 @@ function ListaProdutos() {
     <>
       {produtos.map((produtos) => (
         <Box m={2} display="flex">
-          <Card variant="outlined">
+          <Card className="card" variant="outlined">
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Produtos
