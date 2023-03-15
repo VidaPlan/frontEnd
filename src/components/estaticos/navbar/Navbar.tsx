@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Button, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Button, TextField, Toolbar, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
@@ -56,9 +56,11 @@ function Navbar() {
                 </Link>
               </Box>
               <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
-                  Dicas de pantação
-                </Typography>
+                <Link to='/dicasplantacao' className="text-decorator-none1">
+                  <Typography variant="h6" color="inherit">
+                    Dicas de pantação
+                  </Typography>
+                </Link>
               </Box>
               <Box mx={1} className="cursor">
                 <Typography variant="h6" color="inherit">
@@ -70,6 +72,13 @@ function Navbar() {
                   Logout
                 </Typography>
               </Box>
+            </Box>
+
+            <Box >
+              <form >
+                <TextField  className="text-decorator-none1" label="Pesquisa" variant="outlined" name="pesquisa" margin="normal" />
+                <Button className="text-decorator-none1" type="submit" variant="contained"></Button>
+              </form>
             </Box>
             <Box mx={2} display="flex" gap={2}>
               <Link to="/login" className="text-decorator-none1">
