@@ -8,6 +8,7 @@ import {
   Card,
   CardActions,
   CardContent,
+  Grid,
 } from "@material-ui/core";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
@@ -47,7 +48,8 @@ function ListaProdutos() {
   
     <>
       {produtos.map((produtos) => (
-        <Box m={2} display="flex">
+        <Grid className='pd90'>
+        <Box  m={2} display="flex">
           <Card className="card" variant="outlined">
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
@@ -113,6 +115,7 @@ function ListaProdutos() {
             </CardActions>
           </Card>
         </Box>
+        </Grid>
       ))}
     </>
   );

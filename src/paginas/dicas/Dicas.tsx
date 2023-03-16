@@ -16,7 +16,7 @@ function Dicas() {
   };
     return (
       <>
-    <Grid container className='corf'>
+    <Grid container className='corf pd80'>
     <Box   display='flex'  gap='10px'>
     <Card style={{width:'31.8vw',height:'20vw', marginTop:'1vw', marginLeft:'1vw'}} className='card' variant="outlined">
          <CardContent >
@@ -33,6 +33,7 @@ function Dicas() {
                         <DialogTitle>Título da janela</DialogTitle>
                         <DialogContent>
                         <Typography variant="body1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates perspiciatis vel similique pariatur perferendis aperiam suscipit rerum laborum sint, saepe excepturi possimus dolor exercitationem, iure incidunt eveniet? Nesciunt, et. <img src="https://images-ext-2.discordapp.net/external/hHlRL9OK0IgWHAUfYkZw-9GZvzUWSGKlOmIcExSAFKo/https/i.imgur.com/jNUnH3Q.png?width=450&height=450" alt="" /></Typography>
+
                         </DialogContent>
                         <DialogActions>
                         <Button onClick={handleClose}>Fechar</Button>
@@ -148,6 +149,7 @@ function Dicas() {
                         <DialogTitle>Título da janela</DialogTitle>
                         <DialogContent>
                         <Typography variant="body1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates perspiciatis vel similique pariatur perferendis aperiam suscipit rerum laborum sint, saepe excepturi possimus dolor exercitationem, iure incidunt eveniet? Nesciunt, et. <img src="https://images-ext-2.discordapp.net/external/hHlRL9OK0IgWHAUfYkZw-9GZvzUWSGKlOmIcExSAFKo/https/i.imgur.com/jNUnH3Q.png?width=450&height=450" alt="" /></Typography>
+                        
                         </DialogContent>
                         <DialogActions>
                         <Button onClick={handleClose}>Fechar</Button>
@@ -158,7 +160,7 @@ function Dicas() {
             </CardContent> 
             </Card>          
     </Box>
-        )
+        
         </Grid>
     </>
     )
