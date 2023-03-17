@@ -64,6 +64,13 @@ function Navbar() {
                   </Typography>
                 </Link>
               </Box>
+              <Box mx={1} className="cursor">
+                <Link to='/colaboradores' className="text-decorator-none1">
+                  <Typography className="corDaLetra" variant="h6" color="inherit">
+                    Colaboradores
+                  </Typography>
+                </Link>
+              </Box>
                 </Box>
               <Box mx={1} className="cursor sair" onClick={goLogout}>
                 <Typography className="corDaLetra" variant="h6" color="inherit">

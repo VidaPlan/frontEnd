@@ -18,8 +18,18 @@
     background-color: #0001209e;
     color: #fff;
 }
+.card {
+    width: calc(90% / 3 - 1rem);
+    margin-bottom: -4rem;
+  }
 
 .pd90{
 
     padding: 4rem;
+}
+.Search {
+    width: 20% !important;
+    top: 30px !important;
+    margin-left: 37rem !important;
+    margin-top: 3rem !important;
 }
