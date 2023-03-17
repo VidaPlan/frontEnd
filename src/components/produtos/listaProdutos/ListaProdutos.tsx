@@ -15,6 +15,7 @@ import { toast } from "react-toastify";
 import Produtos from "../../../models/Produtos";
 import { busca } from "../../../service/Service";
 import { TextField } from '@material-ui/core';
+import ModalProdutos from "../modalProdutos/ModalProdutos";
 
 function ListaProdutos() {
   const [produtos, setProdutos] = useState<Produtos[]>([]);
@@ -74,8 +75,10 @@ function ListaProdutos() {
     setPesquisa(e.currentTarget.value)
   }
   />
+    
       {filteredList.map((produtos) => (
         <Grid  container className="pd90">
+          <ModalProdutos />
           <Box m={2} width= '100%'>
             <Card className="card" variant="outlined">
               <CardContent>
