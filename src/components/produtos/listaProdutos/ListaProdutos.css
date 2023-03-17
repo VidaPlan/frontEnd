@@ -18,10 +18,11 @@
     background-color: #0001209e;
     color: #fff;
 }
-.card {
-    width: calc(90% / 3 - 1rem);
+/* .card {
+    width: calc(100% / 1.5 - 1rem);
     margin-bottom: -4rem;
-  }
+    margin-top: -2rem;
+} */
 
 .pd90{
 
@@ -32,4 +33,11 @@
     top: 30px !important;
     margin-left: 37rem !important;
     margin-top: 3rem !important;
+}
+.modalP{
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+.imgproduto{
+    width: 150px;
 }

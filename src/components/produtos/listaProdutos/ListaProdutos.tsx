@@ -61,6 +61,8 @@ function ListaProdutos() {
     }
   });
 
+  const items = []
+
   return (
     <>
 <TextField
@@ -75,11 +77,12 @@ function ListaProdutos() {
     setPesquisa(e.currentTarget.value)
   }
   />
-    
+  <Grid className="modalP">
+    <ModalProdutos />
+    </Grid>
+    <Box display='flex' flexWrap='wrap' className="pd90" >
       {filteredList.map((produtos) => (
-        <Grid  container className="pd90">
-          <ModalProdutos />
-          <Box m={2} width= '100%'>
+          <Box width= '100%'>
             <Card className="card" variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
@@ -108,11 +111,8 @@ function ListaProdutos() {
                   <span className="txtnegrito">Categoria: </span>
                   {produtos.categorias?.tipo}
                 </Typography>
-                <img
-                  className="img2"
-                  src="https://imgur.com/OlQmryk.png"
-                  alt="Foto de uma muda de Amora"
-                />
+                <img src={produtos.embalagem} alt="" className="imgproduto"/>
+
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5}>
@@ -149,8 +149,8 @@ function ListaProdutos() {
               </CardActions>
             </Card>
           </Box>
-        </Grid>
       ))}
+    </Box>
     </>
   );
 }
