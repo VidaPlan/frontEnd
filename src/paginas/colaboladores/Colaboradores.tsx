@@ -133,7 +133,7 @@ function Colaboradores() {
                   <img src="https://imgur.com/B7Jz0f4.png" alt=""className="imgC" />
                   <h2>
                     Marcelo <br></br>
-                    <span>Nunes</span>
+                    <span>Azevedo</span>
                   </h2>
                   <h5>Desenvolvedor Java Full Stack</h5>
                   <p>
@@ -189,9 +189,8 @@ function Colaboradores() {
                   component="h6"
                   align="left"
                 >
-                  Sou apaixonado por marketing digital e tudo que envolve tecnologia!
-                 Tenho o inglês intermediário, e habilidades sólidas em pacote Excel, sheets, análise de dados no analytics e relatórios de métricas, criação de apresentações, gerenciamento de campanhas publicitárias Meta Ads, Google Ads, entre outros.
-                 Como desenvolvedor Java Full Stack JR, tenho conhecimentos em Spring Boot, Insomnia, Visual Studio, MySQL, HTML, CSS, JS, Java, Python, Postman, Node.js, React, GitHub e outras tecnologias. Além disso, sempre estou procurando aprender e evoluir, o que me permite estar sempre atualizado com as últimas tendências e ferramentas da indústria.
+                  Como desenvolvedor Java Full Stack JR, tenho conhecimentos em Spring Boot, Insomnia, Visual Studio, MySQL, HTML, CSS, JS, Java, Python, Postman, Node.js, React, GitHub e outras tecnologias. Além disso, sempre estou procurando aprender e evoluir, o que me permite estar sempre atualizado com as últimas tendências e ferramentas da indústria.<br/>
+                  Minhas soft skills incluem empatia, persistência, determinação, criatividade, proatividade e resiliência Acredito que estas habilidades, juntamente com minha paixão por aprender e evoluir, me tornam um profissional confiável e competente
                 </Typography>
               </Box>
             </Box>
@@ -205,7 +204,7 @@ function Colaboradores() {
                   <img src="https://imgur.com/HevuBuK.png" alt=""className="imgC" />
                   <h2>
                     Otavio<br></br>
-                    <span>Nunes</span>
+                    <span>Matheu</span>
                   </h2>
                   <h5>Desenvolvedor Java Full Stack</h5>
                   <p>
@@ -226,7 +225,12 @@ function Colaboradores() {
                   component="h6"
                   align="left"
                 >
-                 Conhecimentos técnicos em HTML | CSS | Python | MySQL | Typescript | React | Java | Spring boot | Git | GitHub 
+                Olá, meu nome é Otavio Matheus. Sou uma pessoa altamente motivada e determinada, sempre buscando desafios que me permitam crescer e aprender.
+                Tenho conhecimentos técnicos em HTML | CSS  |  Python | MySQL | Typescript | React | Java | Spring boot | Git | GitHub, e experiência em
+                atendimento ao cliente e logística.
+                Sou uma pessoa comunicativa e gosto de trabalhar em equipe, sempre procurando colaborar com os colegas e trazer soluções criativas para os problemas.
+                Estou sempre disposto a aprender e me adaptar a novas situações, e acredito que posso ser
+                um grande contribuinte para qualquer projeto ou equipe que eu faça parte.
                 </Typography>
               </Box>
             </Box>

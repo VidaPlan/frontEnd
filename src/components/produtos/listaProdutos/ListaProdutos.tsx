@@ -80,10 +80,10 @@ function ListaProdutos() {
   <Grid className="modalP">
     <ModalProdutos />
     </Grid>
-    <Box display='flex' flexWrap='wrap' className="pd90" >
+    <Box className="pd90" >
       {filteredList.map((produtos) => (
-          <Box width= '100%'>
-            <Card className="card" variant="outlined">
+          <Box className="card">
+            <Card className="innercard" variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   Produtos
