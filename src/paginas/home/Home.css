@@ -6,14 +6,35 @@
     margin: 50px;
     margin-top: 5rem;
     
+    
 
+}
+.imgHome{
+    background-image: url(https://imgur.com/9IIeYEb.png);
+}
+.imgbox{
+   /*margin-top: 5px;
+    display: flex;
+    flex-flow: wrap ;
+    justify-content: center;
+    align-items: center;*/
+    background: rgba( 232, 252, 207, 0.2 ) !important;
+    box-shadow: 0 8px 32px 0 rgba(40, 135, 31, 0.37) !important;
+    backdrop-filter: blur( 5px ) !important;
+    -webkit-backdrop-filter: blur( 5px ) !important;
+    border-radius: 20px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    color: white;
+    text-align: center;
 }
 .img{
     margin-top: 5px;
     display: flex;
     flex-flow: wrap ;
     justify-content: center;
-    align-items: center;
+    align-items: center
+
 }
 .home{
     background-color: #E8FCCF;
@@ -22,3 +43,4 @@
 *{
     font-family: 'Inter', sans-serif;
 }
+

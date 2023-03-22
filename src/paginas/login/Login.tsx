@@ -85,7 +85,7 @@ function Login() {
                             type="password"
                             fullWidth
                         />
-                        <Grid  container xs={12} justifyContent="space-between">
+                        <Grid  container xs={12} justifyContent="center">
                                 <Button
                                     className="botao1"
                                     type="submit"
@@ -94,12 +94,7 @@ function Login() {
                                 >
                                     Logar
                                 </Button>
-                                <Button className="botao2"
-                                    type="submit" 
-                                    variant="contained" 
-                                    color="secondary">
-                                    Cancelar
-                                </Button>
+                                
                         </Grid>
                     </form>
                     <Box  display="flex" justifyContent="center" marginTop={2}>

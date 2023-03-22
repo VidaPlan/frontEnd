@@ -25,7 +25,7 @@ function Home() {
   }, [token]);
 
   return (
-    <Grid container className="home pd80">
+    <Grid container className="home pd80 imgHome">
       <Grid xs={5} className="texto">
         <h2>Diferencial</h2>
         <h3>
@@ -41,15 +41,10 @@ function Home() {
         <img src="https://images-ext-2.discordapp.net/external/05KiTmVLB79aOd8mupVQqJCxO9ot5mQjz_ovYuEsLDQ/https/cdn.diariodigital.com.br/wp-content/uploads/2020/08/Agricultura.jpg?width=890&height=473" alt="" width='700px'/>
       </Grid>
       <Grid xs={5} className="texto">
-        <iframe
-          src="https://drive.google.com/file/d/1zW9gzYHIZM0VNkvC6FhSaB_vsMxQF8VS/preview"
-          width="640"
-          height="480"
-          allow="autoplay"
-        ></iframe>
+      <img src="https://images.unsplash.com/flagged/photo-1578590674520-d64716422ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80" alt="" width='500px'/>
         <Grid xs={4}></Grid>
       </Grid>
-      <Grid className="img" xs={6}>
+      <Grid className="imgbox" xs={6}>
         <h3>
         Uma das vantagens da agricultura para familias carentes é que ela não requer 
         grandes investimentos financeiros. é possivel começar com sementes e mudas 

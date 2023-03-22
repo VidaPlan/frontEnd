@@ -12,7 +12,9 @@
 
 }
 .botao1{
-    background-color: green !important;
+    background-color: #ffae00  !important;
+    display: flex;
+    justify-content: center;
 }
 
 .img{
