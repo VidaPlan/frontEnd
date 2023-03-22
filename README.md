@@ -38,22 +38,22 @@ Este é o repositório do projeto de e-commerce de sementes, desenvolvido em gru
     
 <div align="center">
   <a href="https://github.com/ChrisPCruz99">
-    <img src="https://i.imgur.com/IlNyrtS.png "alt="Chris" width="150">
+    <img src="https://i.imgur.com/IlNyrtS.png "alt="Chris" width="200">
   </a>
   <a href="https://github.com/Leonardoassis7">
-    <img src="https://i.imgur.com/n6uJs6r.png" alt="Leo" width="150">
+    <img src="https://i.imgur.com/n6uJs6r.png" alt="Leo" width="200">
   </a>
   <a href="https://github.com/Miguel-hub22">
-    <img src="https://i.imgur.com/MUVouOU.png" alt="Miguel" width="150" style="border-radius: 50%;">
+    <img src="https://i.imgur.com/MUVouOU.png" alt="Miguel" width="200" style="border-radius: 50%;">
   </a>
   <a href="https://github.com/Nichbreeze">
-    <img src="https://i.imgur.com/y3NLJ6V.png" alt="Nick" width="150" style="border-radius: 50%;">
+    <img src="https://i.imgur.com/y3NLJ6V.png" alt="Nick" width="200" style="border-radius: 50%;">
   </a>
   <a href="https://github.com/otaviomatheus0">
-    <img src="https://i.imgur.com/M21C3bP.png" alt="Otavio" width="150" style="border-radius: 50%;">
+    <img src="https://i.imgur.com/M21C3bP.png" alt="Otavio" width="200" style="border-radius: 50%;">
   </a>
   <a href="https://github.com/Marcelobuda">
-    <img src="https://i.imgur.com/OTOdu39.png" alt="Marcelo" width="150" style="border-radius: 50%;">
+    <img src="https://i.imgur.com/OTOdu39.png" alt="Marcelo" width="200" style="border-radius: 50%;">
   </a>
 </div>
     </div
