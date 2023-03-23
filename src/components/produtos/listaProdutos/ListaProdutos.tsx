@@ -18,11 +18,17 @@ import { TextField } from '@material-ui/core';
 import ModalProdutos from "../modalProdutos/ModalProdutos";
 
 function ListaProdutos() {
+  let navigate = useNavigate();
   const [produtos, setProdutos] = useState<Produtos[]>([]);
-  const token = useSelector<TokenState, TokenState["token"]>(
+
+  const token = useSelector<TokenState, TokenState['token']>(
     (state) => state.token
   );
-  let navigate = useNavigate();
+
+  const userId = useSelector<TokenState, TokenState['id']>(
+    (state) => state.id
+  );
+
 
   async function getPost() {
     await busca("/produtos", setProdutos, {
@@ -114,6 +120,7 @@ function ListaProdutos() {
                 <img src={produtos.embalagem} alt="" className="imgproduto"/>
 
               </CardContent>
+              {produtos.usuario?.id === +userId ? (
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5}>
                   <Link
@@ -147,6 +154,7 @@ function ListaProdutos() {
                   </Link>
                 </Box>
               </CardActions>
+              ):(<><h2>Você não pode alterar ou deletar o produto</h2></>)}
             </Card>
           </Box>
       ))}

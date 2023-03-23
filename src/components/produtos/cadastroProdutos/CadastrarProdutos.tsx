@@ -8,6 +8,7 @@ import Produtos from '../../../models/Produtos';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/TokensReducer';
 import { toast } from 'react-toastify';
+import Usuario from '../../../models/Usuario';
 
 function CadastroProdutos() {
     let navigate = useNavigate();
@@ -16,6 +17,9 @@ function CadastroProdutos() {
     const token = useSelector<TokenState, TokenState['token']>(
     (state)=>state.token
 );
+const userId = useSelector<TokenState, TokenState['id']>(
+    (state) => state.id
+  );
 
 useEffect(() => {
     if (token == "") {
@@ -39,8 +43,16 @@ const [categoria, setCategoria] = useState<Categorias>(
         dicasPlantacao:'',
         regiao:'',
         embalagem: '',
-        categorias: null
+        categorias: null,
+        usuario: null
 })
+const [usuario, setUsuario] = useState<Usuario>({
+    id: +userId,
+    nome: '',
+    usuario: '',
+    senha: '',
+    cpf: ''
+  })
 
 useEffect(() => { 
     setProdutos({
@@ -80,6 +92,14 @@ function updatedProdutos(e: ChangeEvent<HTMLInputElement>) {
         categorias: categoria
     })
 }
+
+useEffect(() => {
+    setProdutos({
+      ...produtos,
+      categorias: categoria,
+      usuario: usuario
+    });
+  }, [categoria]);
 
 async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault()
