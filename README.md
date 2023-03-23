@@ -29,7 +29,7 @@ Este é o repositório do projeto de e-commerce de sementes, desenvolvido em gru
    
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTJlM2RjNmIwYzkxY2Q5OWJjMDQ5Y2Q1NDYzOGE0YmU1YWRkYjcwNCZjdD1n/Re9KMj9cgRmLgn4VFX/giphy.gif" alt="gif" width="600"/>
     
-   <h2><a href="https://vidaplan.netlify.app/login">acesse nosso site</a>
+   <h2><a href="https://vidaplan.netlify.app">acesse nosso site</a>
  </h2>
     
     
