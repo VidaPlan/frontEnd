@@ -57,7 +57,8 @@ const [usuario, setUsuario] = useState<Usuario>({
 useEffect(() => { 
     setProdutos({
         ...produtos,
-        categorias: categoria
+        categorias: categoria,
+        usuario: usuario
     })
 }, [categoria])
 

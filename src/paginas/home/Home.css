@@ -11,6 +11,9 @@
 }
 .imgHome{
     background-image: url(https://imgur.com/9IIeYEb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .imgbox{
    /*margin-top: 5px;

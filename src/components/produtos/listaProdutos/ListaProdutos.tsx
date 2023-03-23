@@ -91,10 +91,7 @@ function ListaProdutos() {
           <Box className="card">
             <Card className="innercard" variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Produtos
-                </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" id="nomeprod">
                   <span className="txtnegrito">{produtos.nome}</span>
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -118,11 +115,10 @@ function ListaProdutos() {
                   {produtos.categorias?.tipo}
                 </Typography>
                 <img src={produtos.embalagem} alt="" className="imgproduto"/>
-
               </CardContent>
               {produtos.usuario?.id === +userId ? (
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5}>
+                <Grid container justifyContent="center">
                   <Link
                     to={`/cadastroprodutos/${produtos.id}`}
                     className="text-decorator-none"
@@ -151,10 +147,11 @@ function ListaProdutos() {
                         deletar
                       </Button>
                     </Box>
+                    
                   </Link>
-                </Box>
+                </Grid>
               </CardActions>
-              ):(<><h2>Você não pode alterar ou deletar o produto</h2></>)}
+              ):(<><h2>Sem autorização para alteração</h2></>)}
             </Card>
           </Box>
       ))}
