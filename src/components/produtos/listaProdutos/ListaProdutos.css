@@ -11,16 +11,18 @@
 .card:hover{
     transform: translateY(-10px); 
     cursor: pointer;
-    position:relative;
+    position: relative;
     top:-4px;box-shadow:0 4px 4px #999;
     transition: all .2s ease-in-out;
-    border-radius: 10px;
+    /* border-radius: 2rem; */
     background-color: #0001209e;
     color: #fff;
 }
 .card {
     margin: 1rem;
     display: flex;
+    /* border-radius: 2rem; */
+    border: 1px #168b55 solid;
 }
 .innercard{
     display: flex;
@@ -44,5 +46,11 @@
     margin-top: 5rem;
 }
 .imgproduto{
-    width: 150px;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+}
+#nomeprod{
+    text-align: center;
+    margin-bottom: 5px;
 }
