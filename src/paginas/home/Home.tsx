@@ -26,6 +26,7 @@ function Home() {
 
   return (
     <Grid container className="home pd80 imgHome">
+      <Grid xs={12} ><Carousel/></Grid>
       <Grid xs={5} className="texto">
         <h2>Diferencial</h2>
         <h3>
@@ -53,7 +54,6 @@ function Home() {
         horta em casa, é possivel cultivar uma variedade de alimentos.
         </h3>
       </Grid>
-      {/* <Carousel/> */}
     </Grid>
   );
 }

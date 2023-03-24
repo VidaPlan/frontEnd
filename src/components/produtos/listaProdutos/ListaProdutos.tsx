@@ -67,7 +67,6 @@ function ListaProdutos() {
     }
   });
 
-  const items = []
 
   return (
     <>
