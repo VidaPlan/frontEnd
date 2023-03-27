@@ -30,7 +30,7 @@ const token = useSelector<TokenState, TokenState["token"]>(
 
   const items = produtos.map(produto =>(
     <Box className="pd90c">
-            <Card variant="outlined">
+            <Card variant="outlined" className="innercardc">
               <CardContent>
               <Typography variant="h5" component="h2" id="nomeprod">
                   <span className="txtnegritoc">{produto.nome}</span>

@@ -8,13 +8,13 @@ import {
   Card,
   CardActions,
   CardContent,
-  Grid} from "@material-ui/core";
+  Grid,
+  TextField} from "@material-ui/core";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import { toast } from "react-toastify";
 import Produtos from "../../../models/Produtos";
 import { busca } from "../../../service/Service";
-import { TextField } from '@material-ui/core';
 import ModalProdutos from "../modalProdutos/ModalProdutos";
 
 function ListaProdutos() {
@@ -83,7 +83,16 @@ function ListaProdutos() {
   }
   />
   <Grid className="modalP">
-    <ModalProdutos />
+  <Link to="/cadastroprodutos">
+              <Button
+                variant="contained"
+                className="marginLeft"
+                size="small"
+                color="primary"
+              >
+                Cadastrar um novo Produto
+              </Button>
+            </Link>
     </Grid>
     <Box className="pd90" >
       {filteredList.map((produtos) => (
@@ -113,7 +122,9 @@ function ListaProdutos() {
                   <span className="txtnegrito">Categoria: </span>
                   {produtos.categorias?.tipo}
                 </Typography>
+                <Grid className="imgproduto1" >
                 <img src={produtos.embalagem} alt="" className="imgproduto"/>
+                </Grid>
               </CardContent>
               {produtos.usuario?.id === +userId ? (
               <CardActions>
@@ -150,7 +161,7 @@ function ListaProdutos() {
                   </Link>
                 </Grid>
               </CardActions>
-              ):(<><h2>Sem autorização para alteração</h2></>)}
+              ):(<><h6 className="msgAutorizacao">Sem autorização para alter ou excluir o produto</h6></>)}
             </Card>
           </Box>
       ))}

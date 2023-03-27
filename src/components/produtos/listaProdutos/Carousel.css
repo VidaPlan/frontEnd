@@ -12,16 +12,22 @@
     color: #fff;
 } */
 .pd90c{
-    margin: 1rem 25rem;
+    margin: 1rem 15rem;
     display: grid;
+    border: 1px #168b55 solid;
 
 }
 .imgprodutoc{
     width: 250px;
     height: 150px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 #nomeprod{
     text-align: center;
     margin-bottom: 5px;
 }
+/* .innercardc{
+    background-color: #ecffe9 !important;
+} */

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ChangeEvent } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, Grid } from '@material-ui/core';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import { busca, buscaId, post, put } from '../../../service/Service';
 import './CadastrarProdutos.css';
 import Categorias from '../../../models/Categorias';
@@ -133,7 +133,9 @@ function back() {
 return (
     <Container maxWidth="sm" className="topo">
         <form onSubmit={onSubmit}>
-            <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro produtos</Typography>
+        <Typography variant="h3" align='center'>
+        {produtos.id != 0 ? 'Edite o Produto' : 'Cadastre um Produto  '}
+        </Typography>
             <TextField value={produtos.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
             <TextField value={produtos.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="descricao" label="Descrição" name="descricao" variant="outlined" margin="normal" fullWidth />
             <TextField value={produtos.dicasPlantacao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="dicasPlantacao" label="Dicas de Plantacao" variant="outlined" name="dicasPlantacao" margin="normal" fullWidth />
