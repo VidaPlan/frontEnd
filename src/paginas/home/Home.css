@@ -7,6 +7,8 @@
     text-align: center;
     margin-left: 48%;
     margin-top: 5rem;
+    padding: 0.5rem;
+
 
 }
 .texto2{
@@ -22,6 +24,7 @@
     border-radius: 20px;
     text-align: center;
     margin-left: 48%;
+    padding: 0.5rem;
 }
 .imgHome{
     background-image: url(https://imgur.com/TnLz2Iw.png);
@@ -60,9 +63,6 @@
     justify-content: center;
     align-items: center;
 }
-*{
-    font-family: 'Inter', sans-serif;
-}
-.gif{
-
+body, p{
+    font-family: 'roboto' !important;
 }

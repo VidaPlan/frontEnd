@@ -161,7 +161,7 @@ function ListaProdutos() {
                   </Link>
                 </Grid>
               </CardActions>
-              ):(<><h6 className="msgAutorizacao">Sem autorização para alter ou excluir o produto</h6></>)}
+              ):(<><h6 className="msgAutorizacao">Sem autorização para alterar ou excluir o produto</h6></>)}
             </Card>
           </Box>
       ))}

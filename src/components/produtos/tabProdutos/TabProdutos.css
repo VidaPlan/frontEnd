@@ -1,5 +1,4 @@
 .painel{
-
     color: black !important;
     font-weight: bold !important;
 
@@ -18,5 +17,9 @@ color: black !important;
 }
 .projeto{
     display: flex;
-    gap: 10px;
+    gap: 2rem;
+    align-items: center;
+}
+.titulo{
+    font-weight: bold !important;
 }
