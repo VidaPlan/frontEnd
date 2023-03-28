@@ -8,7 +8,7 @@
 <div align="center">
 <h1>Nosso objetivo</h1>
 </div>
-Este é o repositório do projeto de e-commerce de sementes, desenvolvido em grupo no bootcamp da Generation, com o objetivo de contribuir para a diminuição da fome no Brasil e ensinar sobre cultivo a famílias carentes e pequenos agricultores através do comércio eletrônico de sementes.
+Este é um repositório do projeto de e-commerce de sementes, desenvolvido em grupo no bootcamp da Generation, com o objetivo de contribuir para a diminuição da fome no Brasil e ensinar sobre cultivo a famílias carentes e pequenos agricultores através do comércio eletrônico de sementes.
 
 <div align="center">
   
