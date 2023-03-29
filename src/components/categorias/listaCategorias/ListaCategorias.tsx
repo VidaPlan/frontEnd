@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import { toast } from "react-toastify";
 import Categorias from "../../../models/Categorias";
+import Usuario from "../../../models/Usuario";
 import { useNavigate, Link } from "react-router-dom";
 import { busca } from "../../../service/Service";
 import {
@@ -27,6 +28,14 @@ function ListaCategorias() {
   );
 
   let navigate = useNavigate();
+
+  const [usuario, setUsuario] = useState<Usuario>({
+    id: +userId,
+    nome: '',
+    usuario: '',
+    senha: '',
+    cpf: ''
+})
 
   async function getCategorias() {
     await busca("/categorias", setCategorias, {
@@ -80,7 +89,7 @@ function ListaCategorias() {
               </Typography>
             </CardContent>
             <CardActions>
-            {categorias.usuario?.id === 1 ? (
+            {usuario?.id === 12 ? (
               <Box display="flex" justifyContent="center" mb={1.5}>
                 <Link
                   to={`/cadastrocategorias/${categorias.id}`}
