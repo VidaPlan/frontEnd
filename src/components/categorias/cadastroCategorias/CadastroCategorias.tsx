@@ -19,7 +19,6 @@ function CadastroCategorias() {
         (state) => state.token
     );
 
-    const [categorias, setCategorias] = useState<Categorias[]>([])
     const userId = useSelector<TokenState, TokenState['id']>(
         (state) => state.id
     );
@@ -45,8 +44,6 @@ function CadastroCategorias() {
         senha: '',
         cpf: ''
     })
-
-
 
     useEffect(() => {
         setCategoria({
