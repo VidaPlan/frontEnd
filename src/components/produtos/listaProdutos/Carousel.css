@@ -12,10 +12,13 @@
     color: #fff;
 } */
 .pd90c{
-    margin: 1rem 15rem;
-    display: grid;
+    margin: 1rem 18rem;
+    display: flex;
     border: 1px #168b55 solid;
-
+}
+.imgcard{
+    justify-content: center;
+    align-items: center;
 }
 .imgprodutoc{
     width: 250px;

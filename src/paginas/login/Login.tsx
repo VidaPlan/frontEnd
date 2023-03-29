@@ -49,11 +49,11 @@ function Login() {
 
     useEffect(() => {
         if(respUserLogin.token !== '') {
-          dispatch(addToken(respUserLogin.token))
-          dispatch(addId(respUserLogin.id.toString()))
-          navigate('/home')
+        dispatch(addToken(respUserLogin.token))
+        dispatch(addId(respUserLogin.id.toString()))
+        navigate('/home')
         }
-      }, [respUserLogin.token])
+    }, [respUserLogin.token])
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();

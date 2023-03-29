@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import { busca } from "../../../service/Service";
 import { Box } from '@mui/material';
-import { Card, CardContent, Typography, CardActions } from '@material-ui/core';
+import { Card, CardContent, Typography, CardActions, Grid } from '@material-ui/core';
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "./Carousel.css";
@@ -29,7 +29,7 @@ const token = useSelector<TokenState, TokenState["token"]>(
   },[])
 
   const items = produtos.map(produto =>(
-    <Box className="pd90c">
+    <Grid className="pd90c">
             <Card variant="outlined" className="innercardc">
               <CardContent>
               <Typography variant="h5" component="h2" id="nomeprod">
@@ -55,10 +55,12 @@ const token = useSelector<TokenState, TokenState["token"]>(
                   <span className="txtnegritoc">Categoria: </span>
                   {produto.categorias?.tipo}
                 </Typography>
+                <Grid className="imgcard">
                 <img src={produto.embalagem} alt="" className="imgprodutoc"/>
+                </Grid>
               </CardContent>
             </Card>
-          </Box>
+          </Grid>
   )
     )
 

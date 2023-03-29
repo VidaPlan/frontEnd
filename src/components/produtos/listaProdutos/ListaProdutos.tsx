@@ -15,7 +15,6 @@ import { TokenState } from "../../../store/tokens/TokensReducer";
 import { toast } from "react-toastify";
 import Produtos from "../../../models/Produtos";
 import { busca } from "../../../service/Service";
-import ModalProdutos from "../modalProdutos/ModalProdutos";
 
 function ListaProdutos() {
   let navigate = useNavigate();
@@ -66,7 +65,6 @@ function ListaProdutos() {
       return elements.nome.toLowerCase().includes(pesquisa);
     }
   });
-
 
   return (
     <>
@@ -126,7 +124,7 @@ function ListaProdutos() {
                 <img src={produtos.embalagem} alt="" className="imgproduto"/>
                 </Grid>
               </CardContent>
-              {produtos.usuario?.id === +userId ? (
+              {produtos.usuario?.id === +userId || produtos.usuario?.id === 1? (
               <CardActions>
                 <Grid container justifyContent="center">
                   <Link
