@@ -6,8 +6,6 @@
     
 }
 .compras{
-    justify-content: space-evenly;
-    display: flex;
     padding-top: 5rem
    
 }
@@ -24,7 +22,11 @@
 }
 .txtnegrito{
     font-weight: bold;
+    font-size: large;
     
+}
+.fotoetxt{
+    display: flex;
 }
 
 
