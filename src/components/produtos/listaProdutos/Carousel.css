@@ -12,12 +12,22 @@
     color: #fff;
 } */
 .pd90c{
+<<<<<<< HEAD
     margin: 1rem  ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     
 
+=======
+    margin: 1rem 18rem;
+    display: flex;
+    border: 1px #168b55 solid;
+}
+.imgcard{
+    justify-content: center;
+    align-items: center;
+>>>>>>> 83ab6b19978bf3bc688a2c51dd18fc90ba7d007b
 }
 .imgprodutoc{
     width: 250px;

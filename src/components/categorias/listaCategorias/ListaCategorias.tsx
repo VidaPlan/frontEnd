@@ -21,6 +21,11 @@ function ListaCategorias() {
   const token = useSelector<TokenState, TokenState["token"]>(
     (state) => state.token
   );
+
+  const userId = useSelector<TokenState, TokenState['id']>(
+    (state) => state.id
+  );
+
   let navigate = useNavigate();
 
   async function getCategorias() {
@@ -63,10 +68,8 @@ function ListaCategorias() {
               </Button>
             </Link>
           </Box>
-      {categorias.map((categorias) => (
+        {categorias.map((categorias) => (
         <Box m={2}>
-          
-         
           <Card variant="outlined">
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
@@ -77,6 +80,7 @@ function ListaCategorias() {
               </Typography>
             </CardContent>
             <CardActions>
+            {categorias.usuario?.id === 1 ? (
               <Box display="flex" justifyContent="center" mb={1.5}>
                 <Link
                   to={`/cadastrocategorias/${categorias.id}`}
@@ -104,9 +108,11 @@ function ListaCategorias() {
                   </Box>
                 </Link>
               </Box>
+          ):(<><h6 className="msgAutorizacao">Sem autorização</h6></>)}
             </CardActions>
           </Card>
         </Box>
+
       ))}
       </Grid>
     </>
