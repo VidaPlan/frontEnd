@@ -98,6 +98,7 @@ function ListaProdutos() {
       {filteredList.map((produtos) => (
           <Box className="card">
             <Card className="innercard" variant="outlined">
+            <Link to='/compras'>
               <CardContent>
                 <Typography variant="h5" component="h2" id="nomeprod">
                   <span className="txtnegrito">{produtos.nome}</span>
@@ -162,6 +163,7 @@ function ListaProdutos() {
                 </Grid>
               </CardActions>
               ):(<><h6 className="msgAutorizacao">Sem autorização para alterar ou excluir o produto</h6></>)}
+              </Link>
             </Card>
           </Box>
       ))}
