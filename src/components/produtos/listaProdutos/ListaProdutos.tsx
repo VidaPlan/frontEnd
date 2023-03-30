@@ -95,9 +95,11 @@ function ListaProdutos() {
           <Box className="card">
             <Card className="innercard" variant="outlined">
               <CardContent>
+              <Link to={`/compras/${produtos.id}`}className="text-decorator-none">
                 <Typography variant="h5" component="h2" id="nomeprod">
                   <span className="txtnegrito">{produtos.nome}</span>
                 </Typography>
+                </ Link>
                 <Typography variant="body2" component="p">
                   <span className="txtnegrito"> Descrição do produto: </span>
                   {produtos.descricao}
@@ -122,8 +124,7 @@ function ListaProdutos() {
                   <img src={produtos.embalagem} alt="" className="imgproduto" />
                 </Grid>
               </CardContent>
-              {produtos.usuario?.id === 12 ||
-              produtos.usuario?.id === +userId ? (
+              {produtos.usuario?.id === 12 || produtos.usuario?.id === +userId ? (
                 <CardActions>
                   <Grid container justifyContent="center">
                     <Link

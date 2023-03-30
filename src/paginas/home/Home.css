@@ -26,12 +26,13 @@
     text-align: center;
     margin-left: 48%;
     padding: 0.5rem;
+    margin-top: 2rem;
 }
 .imgHome{
-    background-image: url(https://imgur.com/TnLz2Iw.png);
+    /*background-image: url(https://imgur.com/TnLz2Iw.png);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .imgbox{
    /*margin-top: 5px;
@@ -64,6 +65,27 @@
     justify-content: center;
     align-items: center;
 }
+.imgp{
+    height: 22vw;
+    width: 22vw;
+    margin: 1rem;
+}
 body, p{
     font-family: 'roboto' !important;
+}
+.bl1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.dicasproduto{
+    display: flex;
+}
+.txtimg{
+    font-size: medium;
+    font-weight: bold;
+    color: #168b55;
+    margin: 1rem;
 }

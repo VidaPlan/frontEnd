@@ -18,6 +18,7 @@ import DeletarProdutos from './components/produtos/deletarProdutos/DeletarProdut
 import Dicas from './paginas/dicas/Dicas';
 import MyAppBar from './components/estaticos/navbar/Navbar';
 import Colaboradores from './paginas/colaboladores/Colaboradores';
+import Compras from './paginas/compras/Compras';
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
         <Route path='/deletarprodutos/:id'element={<DeletarProdutos />}/>
         <Route path='/dicasplantacao'element={<Dicas />}/>
         <Route path='/colaboradores'element={<Colaboradores />}/>
+        <Route path='/compras'element={<Compras />}/>
+        <Route path='/compras/:id'element={<Compras />}/>
         
       </Routes>
         <Footer />

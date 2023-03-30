@@ -1,13 +1,14 @@
 import Grid from "@material-ui/core/Grid";
 import React, { useEffect } from "react";
 import "./Home.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/TokensReducer";
 import { toast } from "react-toastify";
 import TabProdutos from "../../components/produtos/tabProdutos/TabProdutos";
-import Carousel from "../../components/produtos/listaProdutos/Carousel";
 import { Box } from '@mui/material';
+import Carousels from "../../components/carousels/Carousels";
+import Carousel from '../../components/produtos/listaProdutos/Carousel';
 
 
 function Home() {
@@ -27,34 +28,43 @@ function Home() {
 
   return (
     <>
+    
     <Grid container className="pd80 imgHome">
-
-      <Grid className="texto1" xs={6}>
-      <h2>Diferencial</h2>
-        <p>
-          Esse site tem como objetivo ajudar a diminuir a fome e facilitar o
-          acesso a informações sobre boas práticas na plantação, cuidados
-          necessários e locais para compra de sementes. Acreditamos que a
-          agricultura é uma das principais fontes de alimento para a população
-          mundial, e que, com as informações e práticas corretas, é possível
-          aumentar a produtividade e garantir a segurança alimentar das pessoas.
-        </p>
+    <Carousels/>
+    <Carousel/> 
 
       </Grid>
-      <Grid  className="texto2" xs={6}>
-        <p>
-        Uma das vantagens da agricultura para familias carentes é que ela não requer 
-        grandes investimentos financeiros. é possivel começar com sementes e mudas 
-        que podem ser encontradas em lojas especializadas ou até mesmo em feiras livres.
-        Além disso,não é necessario ter um grande espaço para plantar. Com uma pequena 
-        horta em casa, é possivel cultivar uma variedade de alimentos.
-        </p>
-      </Grid>
-      <Grid xs={12}>
-        <TabProdutos />
-      </Grid>
+    <div className="img">
+      <h1>Benefícios de uma Alimentação Saudável</h1>
+    </div>  
+    <Grid className="bl1">
+
+      <Link to='/produtos'> 
+      <img src="https://i.pinimg.com/564x/02/9d/c5/029dc55346b53e7cb6f34043124089b6.jpg" alt="" />
+       </Link>
+
+        <p className="txtimg"> Melhora a disposição - Sistema Imunológico forte - Afasta doenças como câncer - 
+        Uma alimentação saudável traz muitos benefícios para o corpo e mente, 
+        incluindo manter o peso saudável, aumentar a energia, melhorar a saúde do coração, 
+        reduzir o risco de doenças crônicas e fortalecer o sistema imunológico.
+        Alimentos saudáveis podem ser saborosos e divertidos de se experimentar.
+        Fazer escolhas conscientes e equilibradas ao longo do dia pode ser suficiente para melhorar sua qualidade de vida.
+        Comece agora e seu corpo e paladar agradecerão!</p>
+    </Grid> 
+
+    <Grid className="bl1">
+        <p className="txtimg">Controla o peso - Ativa o cérebro - Proporciona longevidade - Uma alimentação saudável pode ser tão divertida
+           quanto jogar videogame! Quando você escolhe alimentos nutritivos e deliciosos, está desbloqueando novas habilidades 
+           para o seu corpo, como manter o peso saudável, aumentar a energia, fortalecer o sistema imunológico e melhorar a saúde do coração.
+            E não é preciso comer alimentos sem sabor - há tantas opções deliciosas de frutas, legumes, proteínas magras e gorduras saudáveis 
+            para experimentar! Então, da próxima vez que pensar em junk food, lembre-se de que uma alimentação saudável pode ser igualmente 
+            divertida e satisfatória. Comece agora e experimente os benefícios por si mesmo.</p>
+        <Link to='/produtos'>
+        <img src="https://i.pinimg.com/564x/e6/ae/07/e6ae076d6d34a0d74f5e8f2c88016480.jpg"  alt="" />
+        </Link>
       </Grid>
 
+      <hr/>
 
     </>
   );

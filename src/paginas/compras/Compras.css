@@ -1,0 +1,32 @@
+
+.imgproduto2{
+    width: 400px;
+    height: 300px;
+    margin: 2px;
+    
+}
+.compras{
+    justify-content: space-evenly;
+    display: flex;
+    padding-top: 5rem
+   
+}
+.corpo{
+    
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;  
+    
+}
+.botaoC{
+    margin: 2px;
+   padding: 2px;
+}
+.txtnegrito{
+    font-weight: bold;
+    
+}
+
+
+
+

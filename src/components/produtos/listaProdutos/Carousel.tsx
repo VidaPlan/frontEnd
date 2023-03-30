@@ -29,7 +29,7 @@ const token = useSelector<TokenState, TokenState["token"]>(
   },[])
 
   const items = produtos.map(produto =>(
-    <Grid className="pd90c">
+    <Box className="pd90c"style={{ display: "flex" }}>
             <Card variant="outlined" className="innercardc">
               <CardContent>
               <Typography variant="h5" component="h2" id="nomeprod">
@@ -60,7 +60,7 @@ const token = useSelector<TokenState, TokenState["token"]>(
                 </Grid>
               </CardContent>
             </Card>
-          </Grid>
+      </Box>
   )
     )
 
