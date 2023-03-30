@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Button, TextField, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Button, Grid, TextField, Toolbar, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
@@ -24,15 +24,25 @@ function Navbar() {
     navigate("/login");
   }
 
-
+  let navbarComponent = null;
+  if(token !== ''){
+    navbarComponent =<Box mx={1} className="cursor sair" onClick={goLogout}>
+        <Typography className="corDaLetra" variant="h6" color="inherit">
+           Sair da Loja
+        </Typography>
+    </Box>
+    
+    }
+    
   return (
     <>
-      <AppBar className="barra" position="static">
-        <Toolbar variant="regular">
-          <Box className="cursor">
-            <Box mx={1} className="cursor"></Box>
-          </Box>
+     <AppBar className="barra" position="static">
+    <Toolbar variant="regular">
+      <Box className="cursor">
+        <Box mx={1} className="cursor"></Box>
+      </Box>
 
+<<<<<<< Updated upstream
           <Box width="100%" display="flex" justifyContent="space-between">
             <Box display="flex">
               <img src="https://imgur.com/QgknDQx.png" alt="" width="60" />
@@ -84,9 +94,52 @@ function Navbar() {
                   Sair da Loja
                 </Typography>
               </Box>
+=======
+      <Box width="100%" display="flex" justifyContent="space-between">
+        <Box display="flex">
+          <img src="https://imgur.com/QgknDQx.png" alt="" width="60" />
+          <Box mx={1} className="cursor">
+            <Link to="/home" className="text-decorator-none1">
+              <Typography className="corDaLetra left" variant="h6" color="initial">
+                Home
+              </Typography>
+            </Link>
+>>>>>>> Stashed changes
           </Box>
-        </Toolbar>
-      </AppBar>
+          <Box mx={1} className="cursor">
+            <Link to="/categorias" className="text-decorator-none1">
+              <Typography className="corDaLetra" variant="h6" color="inherit">
+                Categorias
+              </Typography>
+            </Link>
+          </Box>
+          <Box mx={1} className="cursor">
+            <Link to="/produtos" className="text-decorator-none1">
+              <Typography className="corDaLetra" variant="h6" color="inherit">
+                Produtos
+              </Typography>
+            </Link>
+          </Box>
+          <Box mx={1} className="cursor">
+            <Link to='/dicasplantacao' className="text-decorator-none1">
+              <Typography className="corDaLetra" variant="h6" color="inherit">
+                Dicas de Plantação
+              </Typography>
+            </Link>
+          </Box>
+          <Box mx={1} className="cursor">
+            <Link to='/colaboradores' className="text-decorator-none1">
+              <Typography className="corDaLetra" variant="h6" color="inherit">
+                Colaboradores
+              </Typography>
+            </Link>
+          </Box>
+            </Box>
+            {navbarComponent}
+      </Box>
+    </Toolbar>
+  </AppBar>
+      
       
     </>
     );

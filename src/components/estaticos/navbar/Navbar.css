@@ -10,7 +10,6 @@
 }
 .barra{
 position: fixed !important;
-width: 100%;
 background: rgba( 232, 252, 207, 0.2 ) !important;
 box-shadow: 0 8px 32px 0 rgba(40, 135, 31, 0.37) !important;
 backdrop-filter: blur( 16.5px ) !important;
@@ -30,12 +29,6 @@ backdrop-filter: blur( 16.5px ) !important;
     align-items: center;
   }
   
-.barraP{
-    width: 200px;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-  }
   
 .botaoP{
     background-color: white;

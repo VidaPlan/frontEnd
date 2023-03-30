@@ -1,11 +1,13 @@
-
-.box1{    
-    background-color: #E8FCCF;
-    color:black !important;
+.equipe{
+    margin: 0;
 }
-.box2{
-    background-color: #E8FCCF;
-    color:black !important;
+.nomes{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.pc{
+    margin-top: 0;
 }
 
 .redes{
@@ -28,15 +30,9 @@
     color: #fff;
 }
 /* nome e links para os git */
-.nomes{
-    margin: 0;
-}
 
 .rodape{
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    padding-bottom: 10px;
+   
 }
 
 .caixa {
@@ -46,6 +42,7 @@
     justify-content: center;
     padding-bottom: 12px;
 }
+
 
 .invisivel {
     text-indent: -9999px;
@@ -81,4 +78,31 @@ hr {
     margin-inline-start: auto;
     margin-inline-end: auto;
     overflow: hidden;
+}
+
+@media(max-width: 450px) {
+    .caixa{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+    .nomes{
+        display: flex;
+        flex-direction: column;
+    }
+    .invisivel{
+        display: none;
+    }
+}
+
+@media (min-width: 800px){
+    .caixa{
+        gap: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .pc{
+        display: flex;
+        justify-content: space-around;
+    }
 }
