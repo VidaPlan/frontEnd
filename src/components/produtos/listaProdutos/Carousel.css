@@ -14,10 +14,10 @@
 .pd90c{
     margin: 1rem  ;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    
-
+    min-width: 60rem;
+    min-height: 30rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 .imgprodutoc{
     width: 250px;

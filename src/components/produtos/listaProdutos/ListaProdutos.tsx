@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React, { useState, useEffect, ChangeEvent} from "react";
 import "./ListaProdutos.css";
 import { useNavigate, Link } from "react-router-dom";
 import { Box } from "@mui/material";
@@ -9,8 +9,7 @@ import {
   CardActions,
   CardContent,
   Grid,
-  TextField,
-} from "@material-ui/core";
+  TextField} from "@material-ui/core";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import { toast } from "react-toastify";
@@ -21,11 +20,14 @@ function ListaProdutos() {
   let navigate = useNavigate();
   const [produtos, setProdutos] = useState<Produtos[]>([]);
 
-  const token = useSelector<TokenState, TokenState["token"]>(
+  const token = useSelector<TokenState, TokenState['token']>(
     (state) => state.token
   );
 
-  const userId = useSelector<TokenState, TokenState["id"]>((state) => state.id);
+  const userId = useSelector<TokenState, TokenState['id']>(
+    (state) => state.id
+  );
+
 
   async function getPost() {
     await busca("/produtos", setProdutos, {
@@ -66,47 +68,48 @@ function ListaProdutos() {
 
   return (
     <>
-      <TextField
-        type="text"
-        className="Search"
-        label="Pesquisa"
-        name="pesquisa"
-        id="pesquisa"
-        variant="outlined"
-        margin="normal"
-        onChange={(e: ChangeEvent<HTMLInputElement>) =>
-          setPesquisa(e.currentTarget.value)
-        }
-      />
-      <Grid className="modalP">
-        <Link to="/cadastroprodutos">
-          <Button
-            variant="contained"
-            className="marginLeft"
-            size="small"
-            color="primary"
-          >
-            Cadastrar um novo Produto
-          </Button>
-        </Link>
-      </Grid>
-      <Box className="pd90">
-        {filteredList.map((produtos) => (
+<TextField
+  type="text"
+  className="Search"
+  label="Pesquisa"
+  name="pesquisa"
+  id="pesquisa"
+  variant="outlined"
+  margin="normal"
+  onChange={(e: ChangeEvent<HTMLInputElement>) =>
+    setPesquisa(e.currentTarget.value)
+  }
+  />
+  <Grid className="modalP">
+  <Link to="/cadastroprodutos">
+              <Button
+                variant="contained"
+                className="marginLeft"
+                size="small"
+                color="primary"
+              >
+                Cadastrar um novo Produto
+              </Button>
+            </Link>
+    </Grid>
+    <Box className="pd90" >
+      {filteredList.map((produtos) => (
           <Box className="card">
             <Card className="innercard" variant="outlined">
               <CardContent>
-              <Link to={`/compras/${produtos.id}`}className="text-decorator-none">
                 <Typography variant="h5" component="h2" id="nomeprod">
                   <span className="txtnegrito">{produtos.nome}</span>
                 </Typography>
-                </ Link>
                 <Typography variant="body2" component="p">
                   <span className="txtnegrito"> Descrição do produto: </span>
                   {produtos.descricao}
                 </Typography>
                 <Typography variant="body2" component="p">
                   <span className="txtnegrito">Valor: </span>
-                  {produtos.preco}
+                  {Intl.NumberFormat('pt-br', {
+                style: 'currency',
+                currency: 'BRL'
+              }).format(produtos.preco)}
                 </Typography>
                 <Typography variant="body2" component="p">
                   <span className="txtnegrito">Dicas de Plantação: </span>
@@ -120,55 +123,57 @@ function ListaProdutos() {
                   <span className="txtnegrito">Categoria: </span>
                   {produtos.categorias?.tipo}
                 </Typography>
-                <Grid className="imgproduto1">
-                  <img src={produtos.embalagem} alt="" className="imgproduto" />
+                <Grid className="imgproduto1" >
+                <img src={produtos.embalagem} alt="" className="imgproduto"/>
                 </Grid>
               </CardContent>
-              {produtos.usuario?.id === 12 || produtos.usuario?.id === +userId ? (
-                <CardActions>
-                  <Grid container justifyContent="center">
-                    <Link
-                      to={`/cadastroprodutos/${produtos.id}`}
-                      className="text-decorator-none"
-                    >
-                      <Box mx={1}>
-                        <Button
-                          variant="contained"
-                          className="marginLeft"
-                          size="small"
-                          color="primary"
-                        >
-                          atualizar
-                        </Button>
-                      </Box>
-                    </Link>
-                    <Link
-                      to={`/deletarprodutos/${produtos.id}`}
-                      className="text-decorator-none"
-                    >
-                      <Box mx={1}>
-                        <Button
-                          variant="contained"
-                          size="small"
-                          color="secondary"
-                        >
-                          deletar
-                        </Button>
-                      </Box>
-                    </Link>
-                  </Grid>
-                </CardActions>
-              ) : (
-                <>
-                  <h6 className="msgAutorizacao">
-                    Sem autorização para alterar ou excluir o produto
-                  </h6>
-                </>
-              )}
+              {produtos.usuario?.id === +userId || produtos.usuario?.id === 1? (
+              <CardActions>
+                <Grid container justifyContent="center">
+                  <Link
+                    to={`/cadastroprodutos/${produtos.id}`}
+                    className="text-decorator-none"
+                  >
+                    <Box mx={1}>
+                      <Button
+                        variant="contained"
+                        className="marginLeft"
+                        size="small"
+                        color="primary"
+                      >
+                        atualizar
+                      </Button>
+                    </Box>
+                  </Link>
+                  <Link
+                    to={`/deletarprodutos/${produtos.id}`}
+                    className="text-decorator-none"
+                  >
+                    <Box mx={1}>
+                      <Button
+                        variant="contained"
+                        size="small"
+                        color="secondary"
+                      >
+                        deletar
+                      </Button>
+                    </Box>
+                    
+                  </Link>
+                </Grid>
+              </CardActions>
+              ):(<><Box className="botaocompra"><Link to={`/compras/${produtos.id}`}>
+                <Button
+                variant="contained"
+                size="small"
+                color="primary" 
+              >
+                Comprar
+              </Button></Link></Box></>)}
             </Card>
           </Box>
-        ))}
-      </Box>
+      ))}
+    </Box>
     </>
   );
 }

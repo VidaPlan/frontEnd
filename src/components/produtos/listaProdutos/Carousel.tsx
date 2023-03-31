@@ -28,6 +28,19 @@ const token = useSelector<TokenState, TokenState["token"]>(
     getProdutos()
   },[])
 
+  const responsive = {
+    0: { 
+      items: 1
+  },
+  568: { 
+      items: 2
+  },
+  1024: {
+      items: 3, 
+      itemsFit: 'contain'
+  },
+};
+
   const items = produtos.map(produto =>(
     <Box className="pd90c"style={{ display: "flex" }}>
             <Card variant="outlined" className="innercardc">
@@ -65,8 +78,9 @@ const token = useSelector<TokenState, TokenState["token"]>(
     )
 
   return (
-    <AliceCarousel items={items} mouseTracking infinite autoPlay animationType="slide"
-     animationDuration={3000}/>
+    <AliceCarousel items={items} responsive={responsive} mouseTracking autoPlayStrategy='default' 
+    infinite autoPlay animationType="fadeout"
+    animationDuration={3000} disableDotsControls disableButtonsControls/>
   );
 }
 export default Carousel;

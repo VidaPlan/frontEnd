@@ -30,7 +30,9 @@ function Home() {
     <>
     
     <Grid container className="pd80 imgHome">
-    <Carousels/>
+      {/* <div className="carousels"> */}
+    <Carousels />
+      {/* </div> */}
     <Carousel/> 
 
       </Grid>
@@ -43,7 +45,7 @@ function Home() {
       <img src="https://i.pinimg.com/564x/02/9d/c5/029dc55346b53e7cb6f34043124089b6.jpg" alt="" />
        </Link>
 
-        <p className="txtimg"> Melhora a disposição - Sistema Imunológico forte - Afasta doenças como câncer - 
+        <p className="txtimg"> <h3>Melhora a disposição - Sistema Imunológico forte - Afasta doenças como câncer</h3><br/>
         Uma alimentação saudável traz muitos benefícios para o corpo e mente, 
         incluindo manter o peso saudável, aumentar a energia, melhorar a saúde do coração, 
         reduzir o risco de doenças crônicas e fortalecer o sistema imunológico.
@@ -53,7 +55,7 @@ function Home() {
     </Grid> 
 
     <Grid className="bl1">
-        <p className="txtimg">Controla o peso - Ativa o cérebro - Proporciona longevidade - Uma alimentação saudável pode ser tão divertida
+        <p className="txtimg"><h3>Controla o peso - Ativa o cérebro - Proporciona longevidade</h3><br/> Uma alimentação saudável pode ser tão divertida
            quanto jogar videogame! Quando você escolhe alimentos nutritivos e deliciosos, está desbloqueando novas habilidades 
            para o seu corpo, como manter o peso saudável, aumentar a energia, fortalecer o sistema imunológico e melhorar a saúde do coração.
             E não é preciso comer alimentos sem sabor - há tantas opções deliciosas de frutas, legumes, proteínas magras e gorduras saudáveis 

@@ -55,60 +55,67 @@ function Compras() {
       },
     });
   }
-
+  
   return (
     <>
-      <Grid container className="compras">
+
+      <Grid className="compras">
         <Grid className="fotoetxt">
-          <Grid>
+          <Grid xs={5}>
             <img src={produtos.embalagem} alt="" className="imgproduto2" />
           </Grid>
-          <Grid>
+          <Grid xs={6} className="infos">
             <h1>{produtos.nome}</h1>
-            <Typography variant="body2" className="txtnegrito">
-              {Intl.NumberFormat('pt-br', {
-                style: 'currency',
-                currency: 'BRL'
-              }).format(produtos.preco)}
-            </Typography>
-          <Typography variant="body2" component="p">
-            Região: {produtos.categorias?.tipo}
-          </Typography>
+            <p className="regiao">Região: {produtos.categorias?.tipo}</p>
+            <p>{Intl.NumberFormat('pt-br', {style:'currency',currency:'BRL'}).format(produtos.preco)}</p>
             <h3>em até 10x s/ juros</h3>
-            <h4>ver métodos de pagamentos</h4>
             <span className="txtnegrito">Entrega para todo Brasil </span>
-            <span className="txtnegrito"> </span>
-          </Grid>
-        </Grid>
-        
-        <Grid className="botaoC botaoCarinho">
-          <Button size="small" variant="contained">
-            Adiconar no carrinho
-          </Button>
+        <Grid className="botaoC">
           <Button type="submit" size="small" variant="contained" color="primary">
             Comprar agora
           </Button>
+          <Button size="small" variant="contained">
+          Adiconar no carrinho
+          </Button>
         </Grid>
-
-        <Grid>
-          <Typography variant="body2" component="p">
-            {produtos.regiao}
-          </Typography>
+          </Grid>
         </Grid>
-
-        <Grid>
-          <Typography variant="body2" component="p">
+          <Grid className='desc'>
+          <p>
             <span className="txtnegrito"> Descrição do produto: </span>
             {produtos.descricao}
-          </Typography>
-          <Typography variant="body2" component="p">
-            <span className="txtnegrito">Dicas de Plantação: </span>
-            {produtos.dicasPlantacao}
-          </Typography>
-        </Grid>
-      </Grid>
-      )
-    </>
+          </p>
+          <p>
+          <span className="txtnegrito">Dicas de Plantação: </span>
+          {produtos.dicasPlantacao}
+          </p>
+          </Grid>
+          </Grid>
+        </>
   );
 }
 export default Compras;
+
+{/* <div className="container">
+<h1>Finalizar Compra</h1>
+<div className="product">
+<img src={produtos.embalagem} alt="" className="imgproduto2" />
+<h1>{produtos.nome}</h1>
+</div>
+<p className="price">{Intl.NumberFormat('pt-br', {style:'currency',currency:'BRL'})
+  .format(produtos.preco)}</p>
+  <h2>Detalhes do Produto</h2>
+  <p className="regiao">Região: {produtos.categorias?.tipo}</p>
+  <p><span className="txtnegrito"> Descrição do produto: </span>
+  {produtos.descricao}
+  </p>
+  <p><span className="txtnegrito">Dicas de Plantação: </span>{produtos.dicasPlantacao}</p>
+
+  
+  <Button size="small" variant="contained">
+      Adiconar no carrinho
+    </Button>
+    <Button type="submit" size="small" variant="contained" color="primary">
+      Comprar agora
+    </Button>
+    </div> */}

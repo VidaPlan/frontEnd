@@ -13,8 +13,18 @@ const items = [
 
 function Carousels() {
   return (
-    <AliceCarousel items={items} mouseTracking infinite autoPlay animationType="slide"
-     animationDuration={3000}/>
+    <AliceCarousel
+    autoPlay
+    autoPlayStrategy="default"
+    autoPlayInterval={1000}
+    animationDuration={2000}
+    animationType="fadeout"
+    infinite
+    touchTracking={false}
+    disableDotsControls
+    disableButtonsControls
+    items={items}
+/>
   )
 }
 

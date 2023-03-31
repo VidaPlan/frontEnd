@@ -41,7 +41,6 @@ function App() {
         <Route path='/deletarprodutos/:id'element={<DeletarProdutos />}/>
         <Route path='/dicasplantacao'element={<Dicas />}/>
         <Route path='/colaboradores'element={<Colaboradores />}/>
-        <Route path='/compras'element={<Compras />}/>
         <Route path='/compras/:id'element={<Compras />}/>
         
       </Routes>

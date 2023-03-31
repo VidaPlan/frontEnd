@@ -25,18 +25,25 @@ function Navbar() {
   }
 
   let navbarComponent = null;
-  if(token !== ''){
+  if(token === ''){
+    navbarComponent =<Box mx={1} className="cursor sair">
+        <Link to="/login" className="text-decorator-none1">
+          <Typography className="corDaLetra" variant="h6" color="inherit">
+          Login
+          </Typography>
+        </Link> 
+      </Box>
+    }else{ 
     navbarComponent =<Box mx={1} className="cursor sair" onClick={goLogout}>
         <Typography className="corDaLetra" variant="h6" color="inherit">
-           Sair da Loja
+          Sair da Loja
         </Typography>
-    </Box>
-    
+    </Box>   
     }
-    
+  
   return (
     <>
-     <AppBar className="barra" position="static">
+    <AppBar className="barra" position="static">
     <Toolbar variant="regular">
       <Box className="cursor">
         <Box mx={1} className="cursor"></Box>
@@ -80,14 +87,7 @@ function Navbar() {
                   </Typography>
                 </Link>
               </Box>
-              <Box mx={1} className="cursor">
-                <Link to='/compras' className="text-decorator-none1">
-                  <Typography className="corDaLetra" variant="h6" color="inherit">
-                    Compras
-                  </Typography>
-                </Link>
               </Box>
-                </Box>
             {navbarComponent}
           </Box>
     </Toolbar>
@@ -97,7 +97,7 @@ function Navbar() {
     </>
     );
   
- }
+}
 
 
 export default Navbar;
