@@ -17,3 +17,19 @@
 .botao5{
     background-color: #168b55 !important;
 }
+.botaoC{
+    background-color: #ffae00 !important;
+}
+.MuiFormControl-marginNormal{
+    width: 50% !important;
+    border: 2px solid black !important;
+    text-align: center !important;
+    margin-left: 25% !important;
+}
+
+.MuiFormControl-fullWidth{
+    width: 50% !important;
+    border: 2px solid black !important;
+    text-align: center !important;
+    margin-left: 25% !important;
+}

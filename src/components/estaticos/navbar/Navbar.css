@@ -56,7 +56,33 @@ backdrop-filter: blur( 16.5px ) !important;
     margin-left: 2vw !important;
 }
 
+/*Escondendo o Menu*/
+.menuHamburger{
+    display: none;
+    background-color: #168b55;
+}
 
+.lista{
+    background-color: #168b55;
+    color: black;
+}
+.sairMenu{
+    color: white;
+}
+
+.MuiDrawer-paperAnchorLeft{
+    background-color: #168b55 !important;
+}
+
+
+@media(max-width: 750px){
+    .barra{
+        display: none !important;
+    }
+    .menuHamburger{
+        display: flex;
+    }
+}
 
 
 /* 

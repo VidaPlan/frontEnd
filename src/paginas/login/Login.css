@@ -1,6 +1,4 @@
-.txts {
-    font-weight: bold !important; 
-}
+
 
 .text-decorator-none {
     text-decoration: none;
@@ -12,9 +10,9 @@
 
 }
 .botao1{
+    width: 100px !important;
+    padding: 10px !important;
     background-color: #ffae00  !important;
-    display: flex;
-    justify-content: center;
 }
 
 .img{
@@ -36,4 +34,25 @@
     border-radius: 20px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.MuiFormControl-marginNormal{
+    width: 50% !important;
+    border: 2px solid black !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-left: 25% !important;
+}
+.txts {
+    font-weight: bold !important; 
+}
+.txts:hover{
+    color: #ffae00c2 !important;
+}
+
+
+@media(max-width: 450px){
+    body{
+        overflow-x: hidden;
+    }  
 }

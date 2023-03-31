@@ -73,7 +73,7 @@ function Login() {
     return (
         <Grid className="fundo pd80 imglogin" container direction="row" justifyContent="center" alignItems="center">
             <Grid xs={7} alignItems="center" className="img2">
-                <Box paddingX={20}>
+                <Box>
                     <form onSubmit={onSubmit}>
                         <Typography
                             variant="h3"
@@ -94,7 +94,8 @@ function Login() {
                             name="usuario"
                             margin="normal"
                             fullWidth
-                        />
+                           
+                            />
                         <TextField className="borda"
                             value={userLogin.senha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
@@ -105,14 +106,15 @@ function Login() {
                             margin="normal"
                             type="password"
                             fullWidth
-                        />
+                            
+                            />
                         <Grid  container xs={12} justifyContent="center">
                                 <Button
                                     className="botao1"
                                     type="submit"
                                     variant="contained"
                                     color="primary"
-                                >
+                                    >
                                 {isLoading ? 'Aguarde' : 'Logar'}
                                 </Button>
                                 
@@ -129,8 +131,8 @@ function Login() {
                             </Link>
                     </Box>
                 </Box>
+                </Grid>
             </Grid>
-        </Grid>
     );
 }
 
