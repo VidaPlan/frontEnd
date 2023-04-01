@@ -169,6 +169,7 @@ function CadastroProdutos() {
           margin="normal"
           fullWidth
         />
+        <Grid className="gap2">
         <TextField
           value={produtos.preco}
           onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)}
@@ -178,6 +179,7 @@ function CadastroProdutos() {
           name="preco"
           margin="normal"
         />
+        
         <TextField
           value={produtos.embalagem}
           onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)}
@@ -186,7 +188,10 @@ function CadastroProdutos() {
           variant="outlined"
           name="embalagem"
           margin="normal"
+          fullWidth
         />
+        </Grid>
+        <Grid className="gap2">
         <TextField
           value={produtos.regiao}
           onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)}
@@ -195,8 +200,9 @@ function CadastroProdutos() {
           variant="outlined"
           name="regiao"
           margin="normal"
+          fullWidth
         />
-        <FormControl>
+        <FormControl fullWidth>
           <InputLabel id="demo-simple-select-helper-label">
             Categorias{" "}
           </InputLabel>
@@ -225,6 +231,7 @@ function CadastroProdutos() {
             Finalizar
           </Button>
         </FormControl>
+        </Grid>
       </form>
     </Container>
   );

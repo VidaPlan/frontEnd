@@ -16,4 +16,31 @@
 }
 .botao5{
     background-color: #168b55 !important;
+    margin-left: 7.8rem !important;
+}
+.botaoC{
+    background-color: #ffae00 !important;
+    margin-right: 7.8rem !important;
+}
+/* .MuiFormControl-marginNormal{
+    width: 60% !important;
+    margin-left: 20% !important;
+}
+
+.MuiFormControl-fullWidth{
+    width: 60% !important;
+    margin-left: 20% !important;
+} */
+
+.gap1{
+    gap: 5rem !important;
+}
+.botoes3{
+    justify-content: center!important;
+    align-items: center!important;
+}
+.formcadastro{
+    width: 100%!important;
+    justify-content: space-evenly!important;
+    display: grid !important;
 }

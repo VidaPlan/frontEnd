@@ -25,7 +25,7 @@ function App() {
     <Provider store={store}>
       <ToastContainer />
     <Router>
-      <MyAppBar />
+    <MyAppBar/>
       <Routes>
         <Route path='/'element={<Home />}/>
         <Route path='/home'element={<Home />}/>

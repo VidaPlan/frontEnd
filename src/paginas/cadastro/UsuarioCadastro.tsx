@@ -62,10 +62,10 @@ function UsuarioCadastro() {
         }
     }
     return (
-        <Grid className="fundo pd80 imgCadastro" container direction="row" justifyContent="center" alignItems="center">
+        <Grid className="pd80 imgCadastro" container direction="row" justifyContent="center" alignItems="center">
             <Grid xs={7} alignItems="center" className="img2">
-                <Box paddingX={20}>
-                    <form onSubmit={onSubmit}>
+                <Box>
+                    <form onSubmit={onSubmit} className="formcadastro">
                         <Typography
                             variant="h3"
                             gutterBottom
@@ -131,8 +131,16 @@ function UsuarioCadastro() {
                             type="password"
                             fullWidth
                         />
-                        <Grid container xs={12} justifyContent="space-between">
-                            <Link to="/home" className="text-decorator-none1">
+                        <Grid container xs={12} className='botoes3'>
+                            <Link to="/home" className="text-decorator-none2">
+                            <Button
+                                className="botaoC"
+                                type="submit"
+                                variant="contained"
+                                color="primary"
+                            >
+                                Cadastrar
+                            </Button>
                                 <Button
                                     className="botao5"
                                     type="submit"
@@ -142,14 +150,6 @@ function UsuarioCadastro() {
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button
-                                className="botao1"
-                                type="submit"
-                                variant="contained"
-                                color="primary"
-                            >
-                                Cadastrar
-                            </Button>
                         </Grid>
                     </form>
                     <Box display="flex" justifyContent="center" marginTop={2}></Box>
