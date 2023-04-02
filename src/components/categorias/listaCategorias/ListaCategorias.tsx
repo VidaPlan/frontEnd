@@ -117,7 +117,7 @@ function ListaCategorias() {
                   </Box>
                 </Link>
               </Box>
-          ):(<><h6 className="msgAutorizacao">Sem autorização</h6></>)}
+          ):(<></>)}
             </CardActions>
           </Card>
         </Box>

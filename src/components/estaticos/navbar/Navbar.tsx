@@ -166,13 +166,6 @@ function Navbar() {
                   </Typography>
                 </Link>
               </Box>
-              <Box mx={1} className="cursor">
-                <Link to='/compras' className="text-decorator-none1">
-                  <Typography className="corDaLetra" variant="h6" color="inherit">
-                    Compras
-                  </Typography>
-                </Link>
-              </Box>
                 </Box>
             {navbarComponent}
           </Box>

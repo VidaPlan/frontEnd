@@ -204,7 +204,7 @@ function Colaboradores() {
                   <img src="https://imgur.com/2o9PQdl.png" alt=""className="imgC" />
                   <h2>
                     Otavio<br></br>
-                    <span>Matheu</span>
+                    <span>Matheus</span>
                   </h2>
                   <h5>Desenvolvedor Java Full Stack</h5>
                   <p>

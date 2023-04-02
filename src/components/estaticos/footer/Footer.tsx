@@ -20,7 +20,7 @@ function Footer(){
           <h2 className="equipe"> Equipe </h2>
           <a href="https://linktr.ee/chrispcruz" target="_blank"> Christian Patrick </a><br />
           <a href="https://linktr.ee/Leonardoassis" target="_blank"> Leonardo Assis </a> <br />
-          <a href="" target="_blank"> Marcelo Azevedo </a> <br />  
+          <a href="https://linktr.ee/marcelorazevedo" target="_blank"> Marcelo Azevedo </a> <br />  
           </Typography>                        
       <Typography className="nomes">
           <a href="https://linktr.ee/miguelrsa" target="_blank"> Miguel Rodrigues</a><br />

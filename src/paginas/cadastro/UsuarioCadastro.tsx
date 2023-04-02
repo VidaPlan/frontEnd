@@ -132,7 +132,6 @@ function UsuarioCadastro() {
                             fullWidth
                         />
                         <Grid container xs={12} className='botoes3'>
-                            <Link to="/home" className="text-decorator-none2">
                             <Button
                                 className="botaoC"
                                 type="submit"
@@ -141,6 +140,7 @@ function UsuarioCadastro() {
                             >
                                 Cadastrar
                             </Button>
+                            <Link to="/login" className="text-decorator-none2">
                                 <Button
                                     className="botao5"
                                     type="submit"
