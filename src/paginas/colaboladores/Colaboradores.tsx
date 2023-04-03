@@ -44,9 +44,9 @@ function Colaboradores() {
                   component="h6"
                   align="left"
                 >
-                Atualmente em transição de carreira, finalizei recentemente um bootcamp de Desenvolvedor 
-                  Java Full Stack na Generation Brasil, trabalhando em projetos usando a Stack Java, Spring, MySQL, Git, 
-                  GitHub, TypeScript, React, HTML, CSS e banco de dados relacionaisultilizando a metodologia ágil.
+                Desenvolvedor Full Stack, formado em um bootcamp na Generation Brasil, trabalhando em projetos usando a Stack Java, Spring, MySQL, Git, 
+                  GitHub, TypeScript, React, HTML, CSS e banco de dados relacionais, ultilizando a metodologia ágil. <br/> Praticando e aperfeiçoando constantimente
+                  minhas Soft skills como, persistencia, trabalho em equipe, orientação ao futuro, flexibilidade, resiliência, entre outros!
                 </Typography>
               </Box>
             </Box>
@@ -154,7 +154,9 @@ function Colaboradores() {
                   component="h6"
                   align="left"
                 >
-                  Full Stack Developer Jr / Java / Spring / MySQL / HTML / CSS / JavaScript / React / TypeScript / Material-UI /Git | GitHub ensino superior cursando.
+                  Sou desenvolvedor fullstak Jr,tenho como objetivo ingressar na área de tecnologia. Recentemente participei do bootcamp da generation Brasil em parceria com o Zé delivery, que me proporcionou uma nova carreira. 
+                  Sou uma pessoa comunicativa, persiste, criativa e gosto de trabalhar em equipe. 
+                  Tenho conhecimento em Java, spring, mysql,Typescript, react,git e github.
                 </Typography>
               </Box>
             </Box>
