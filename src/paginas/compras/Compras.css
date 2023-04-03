@@ -1,48 +1,80 @@
 .imgproduto2{
-    width: 400px;
-    height: 300px;
+    width: 45 0px;
+    height: 325px;
     margin: 2px;
-
 }
 
 .compras{
     padding-top: 5rem;
-   
 }
 
 .botaoC{
-gap: 2rem !important;
+gap: 1rem !important;
+justify-content: space-between;
+margin: 6px  0;
 }
+.bt1{
+  margin-bottom: 1rem !important;
+}
+/* .pdleft{
+  padding-left: 5rem;
+} */
 
 .txtnegrito{
     font-weight: bold;
     font-size: large;
-    
 }
 
 .fotoetxt{
     display: flex;
-    margin-left: 5%;
+    justify-content: space-evenly;
+    gap: 8rem;
+}
+.infos p, .infos span{
+  font-weight: bold;
+  /* line-height: 3; */
 }
 
+.value{
+  font-size: larger;
+  font-weight: bold;
+  color: green;
+}
+h1{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.infos h1, .infos p{
+  display: block;
+  margin: 0;
+  line-height: 1.2;
+}
 .infos{
-    padding-left: 7rem;
-    display: grid;
-    align-items: flex-start;
-    
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 4px;
+  width: 400px;
+  padding: 1rem;
 }
 .desc{
-    margin: 0 2rem;
+    margin: 1rem 2rem;
     display: grid;
     align-items: center;
     justify-content: center;
-
 }
-
-
-
-
-
+.bold{
+  font-weight: bold;
+}
+.hr1{
+  width: 95%;
+  margin: 0 2.5%;
+  margin-top: 2rem;
+}
+.pdbt{
+  padding-bottom: 3rem;
+}
 
  /* .container {
     max-width: 800px;

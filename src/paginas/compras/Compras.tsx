@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/TokensReducer";
 import { busca, buscaId } from "../../service/Service";
 import { toast } from "react-toastify";
+import IconButton from '@material-ui/core/IconButton';
 
 function Compras() {
   let navigate = useNavigate();
@@ -58,64 +59,39 @@ function Compras() {
   
   return (
     <>
-
-      <Grid className="compras">
-        <Grid className="fotoetxt">
-          <Grid xs={5}>
+      <div className="compras">
+        <div className="fotoetxt">
+          <div>
             <img src={produtos.embalagem} alt="" className="imgproduto2" />
-          </Grid>
-          <Grid xs={6} className="infos">
+          </div>
+          <div className="infos">
             <h1>{produtos.nome}</h1>
-            <p className="regiao">Região: {produtos.categorias?.tipo}</p>
-            <p>{Intl.NumberFormat('pt-br', {style:'currency',currency:'BRL'}).format(produtos.preco)}</p>
-            <h3>em até 10x s/ juros</h3>
-            <span className="txtnegrito">Entrega para todo Brasil </span>
-        <Grid className="botaoC">
-          <Button type="submit" size="small" variant="contained" color="primary">
-            Comprar agora
-          </Button>
-          <Button size="small" variant="contained">
-          Adiconar no carrinho
-          </Button>
-        </Grid>
-          </Grid>
-        </Grid>
-          <Grid className='desc'>
-          <p>
-            <span className="txtnegrito"> Descrição do produto: </span>
-            {produtos.descricao}
-          </p>
-          <p>
-          <span className="txtnegrito">Dicas de Plantação: </span>
-          {produtos.dicasPlantacao}
-          </p>
-          </Grid>
-          </Grid>
+            <p className="value">{Intl.NumberFormat('pt-br', {style:'currency',currency:'BRL'}).format(produtos.preco)}</p>
+            <p >Em até 3x de {Intl.NumberFormat('pt-br', {style:'currency',currency:'BRL'}).format(produtos.preco /3)} s/ juros</p>
+            <p><span>Categoria:</span> {produtos.categorias?.tipo}</p>
+            <p className="pdbt"><span>Região:</span> {produtos.regiao}</p>
+            <p>Entrega para todo Brasil </p>
+        <div className="botaoC">
+          <div>
+            <Button className="bt1" type="submit" size="small" variant="contained" color="primary">
+              Comprar agora
+            </Button>
+            </div>
+          <div>
+            <Button size="small" variant="contained" color="secondary">
+              Adiconar no carrinho
+            </Button>
+          </div>
+        </div>
+        </div>
+        </div>
+        <hr  className="hr1"/>
+          <div className='desc'>
+          <p><span className="bold">Descrição do produto: </span>{produtos.descricao}</p>
+          <p><span className="bold">Dicas de Plantação: </span>{produtos.dicasPlantacao}</p>
+          </div>
+          </div>
         </>
   );
 }
 export default Compras;
-
-{/* <div className="container">
-<h1>Finalizar Compra</h1>
-<div className="product">
-<img src={produtos.embalagem} alt="" className="imgproduto2" />
-<h1>{produtos.nome}</h1>
-</div>
-<p className="price">{Intl.NumberFormat('pt-br', {style:'currency',currency:'BRL'})
-  .format(produtos.preco)}</p>
-  <h2>Detalhes do Produto</h2>
-  <p className="regiao">Região: {produtos.categorias?.tipo}</p>
-  <p><span className="txtnegrito"> Descrição do produto: </span>
-  {produtos.descricao}
-  </p>
-  <p><span className="txtnegrito">Dicas de Plantação: </span>{produtos.dicasPlantacao}</p>
-
-  
-  <Button size="small" variant="contained">
-      Adiconar no carrinho
-    </Button>
-    <Button type="submit" size="small" variant="contained" color="primary">
-      Comprar agora
-    </Button>
-    </div> */}

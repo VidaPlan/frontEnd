@@ -12,7 +12,7 @@
 .botao1{
     width: 100px !important;
     padding: 10px !important;
-    background-color: #ffae00  !important;
+    /* background-color: #ffae00  !important; */
 }
 
 .img{
@@ -43,9 +43,11 @@
     color: #ffae00c2 !important;
 }
 .formlogin{
-    width: 100%!important;
+    width: 70%!important;
     justify-content: center!important;
-    display: grid !important;
+    align-items: center !important;
+    margin-left: 15% !important;
+
 }
 
 
