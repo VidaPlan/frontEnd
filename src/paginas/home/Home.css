@@ -78,7 +78,12 @@ body, p{
     justify-content: center;
     align-items: center;
     text-align: center;
-
+}
+.bl2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .dicasproduto{
     display: flex;
@@ -88,4 +93,23 @@ body, p{
     font-weight: bold;
     color: #168b55;
     margin: 1rem;
+}
+.imgproduto5{
+    width: 500px !important;
+    height: 500px !important;
+}
+
+@media (max-width: 1000px){
+    .bl1{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .bl2{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+    .imgproduto5{
+        width: 350px !important;
+        height: 350px !important;
+    }
 }

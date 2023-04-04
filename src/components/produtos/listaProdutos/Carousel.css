@@ -37,3 +37,15 @@
   margin-right: 10px;
   
   }
+  .value{
+    color: #168b55;
+    font-weight: bold !important;
+    font-size: larger  !important;
+    margin-top: .5rem !important;
+  }
+
+  @media (max-width: 800px){
+    .innercardc{
+        width: 35%;
+    }
+  }

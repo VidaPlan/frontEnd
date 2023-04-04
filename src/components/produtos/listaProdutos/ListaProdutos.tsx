@@ -97,19 +97,19 @@ function ListaProdutos() {
           <Box className="card">
             <Card className="innercard" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" id="nomeprod">
-                  <span className="txtnegrito">{produtos.nome}</span>
-                </Typography>
-                <Typography variant="body2" component="p">
-                  <span className="txtnegrito"> Descrição do produto: </span>
-                  {produtos.descricao}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  <span className="txtnegrito">Valor: </span>
+                <h2 id="nomeprod">
+                  {produtos.nome}
+                </h2>
+                <Typography className="value1" variant="body2" component="p">
+                  Valor: 
                   {Intl.NumberFormat('pt-br', {
                 style: 'currency',
                 currency: 'BRL'
               }).format(produtos.preco)}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  <span className="txtnegrito"> Descrição do produto: </span>
+                  {produtos.descricao}
                 </Typography>
                 <Typography variant="body2" component="p">
                   <span className="txtnegrito">Dicas de Plantação: </span>

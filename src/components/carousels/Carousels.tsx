@@ -2,7 +2,6 @@ import React from 'react'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './Carousels.css'
-import { Container } from '@material-ui/core';
 
 const items = [
     <img  src="https://i.pinimg.com/originals/8e/9b/c1/8e9bc1083287202850662bec99443487.png" className='vida1' role="presentation" />,

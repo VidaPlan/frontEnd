@@ -61,7 +61,7 @@ function Compras() {
     <>
       <div className="compras">
         <div className="fotoetxt">
-          <div>
+          <div className="divproduto2">
             <img src={produtos.embalagem} alt="" className="imgproduto2" />
           </div>
           <div className="infos">

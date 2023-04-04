@@ -106,9 +106,7 @@ function CadastroCategorias() {
         <Container maxWidth="sm">
           <form onSubmit={onSubmit}>
             <Typography variant="h3" align="center">
-              {categoria.id != 0
-                ? "Edite a Categoria"
-                : "Cadastre uma Categoria  "}
+              {categoria.id != 0 ? "Edite a Categoria":"Cadastre uma Categoria"}
             </Typography>
             <TextField
               value={categoria.tipo}

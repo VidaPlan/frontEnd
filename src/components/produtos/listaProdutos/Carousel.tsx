@@ -48,13 +48,16 @@ const token = useSelector<TokenState, TokenState["token"]>(
               <Typography variant="h5" component="h2" id="nomeprod">
                   <span className="txtnegritoc">{produto.nome}</span>
                 </Typography>
+                <Typography className="value" variant="body2" component="p">
+                  <span className="txtnegritoc">Valor: </span>
+                  {Intl.NumberFormat('pt-br', {
+                    style: 'currency',
+                    currency: 'BRL'
+                  }).format(produto.preco)}
+                </Typography>
                 <Typography variant="body2" component="p">
                   <span className="txtnegritoc"> Descrição do produto: </span>
                   {produto.descricao}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  <span className="txtnegritoc">Valor: </span>
-                  {produto.preco}
                 </Typography>
                 <Typography variant="body2" component="p">
                   <span className="txtnegritoc">Dicas de Plantação: </span>
@@ -78,9 +81,16 @@ const token = useSelector<TokenState, TokenState["token"]>(
     )
 
   return (
-    <AliceCarousel items={items} responsive={responsive} mouseTracking autoPlayStrategy='default' 
-    infinite autoPlay animationType="fadeout"
-    animationDuration={3000} disableDotsControls disableButtonsControls/>
+    <AliceCarousel items={items} 
+    responsive={responsive} 
+    mouseTracking 
+    autoPlayStrategy='default' 
+    infinite 
+    autoPlay 
+    animationType="fadeout"
+    animationDuration={3000} 
+    disableDotsControls 
+    disableButtonsControls/>
   );
 }
 export default Carousel;

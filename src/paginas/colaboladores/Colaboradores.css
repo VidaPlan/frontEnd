@@ -164,3 +164,31 @@ p {
     margin-right: 2rem;
     margin-left: 1rem;
 }
+
+@media (max-width: 800px){
+    .container-let {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3rem !important;
+    }
+    .separacao {
+        display: none !important;
+    }
+    .apresentacao-left {
+        margin-top: 2rem !important;
+        width: 100%;
+        height: 150%;
+
+    }
+    .cardC {
+        width: 50vw;
+    }
+    .cardC .imgC {
+
+        width: 35vw !important;
+        height: 24vh !important;
+
+    }
+}

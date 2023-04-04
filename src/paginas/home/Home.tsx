@@ -42,7 +42,7 @@ function Home() {
     <Grid className="bl1">
 
       <Link to='/produtos'> 
-      <img src="https://i.pinimg.com/564x/02/9d/c5/029dc55346b53e7cb6f34043124089b6.jpg" alt="" />
+      <img className="imgproduto5" src="https://i.pinimg.com/564x/02/9d/c5/029dc55346b53e7cb6f34043124089b6.jpg" alt="" />
        </Link>
 
         <p className="txtimg"> <h3>Melhora a disposição - Sistema Imunológico forte - Afasta doenças como câncer</h3><br/>
@@ -54,7 +54,7 @@ function Home() {
         Comece agora e seu corpo e paladar agradecerão!</p>
     </Grid> 
 
-    <Grid className="bl1">
+    <Grid className="bl2">
         <p className="txtimg"><h3>Controla o peso - Ativa o cérebro - Proporciona longevidade</h3><br/> Uma alimentação saudável pode ser tão divertida
            quanto jogar videogame! Quando você escolhe alimentos nutritivos e deliciosos, está desbloqueando novas habilidades 
            para o seu corpo, como manter o peso saudável, aumentar a energia, fortalecer o sistema imunológico e melhorar a saúde do coração.
@@ -62,7 +62,7 @@ function Home() {
             para experimentar! Então, da próxima vez que pensar em junk food, lembre-se de que uma alimentação saudável pode ser igualmente 
             divertida e satisfatória. Comece agora e experimente os benefícios por si mesmo.</p>
         <Link to='/produtos'>
-        <img src="https://i.pinimg.com/564x/e6/ae/07/e6ae076d6d34a0d74f5e8f2c88016480.jpg"  alt="" />
+        <img className="imgproduto5" src="https://i.pinimg.com/564x/e6/ae/07/e6ae076d6d34a0d74f5e8f2c88016480.jpg"  alt="" />
         </Link>
       </Grid>
 

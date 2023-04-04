@@ -65,7 +65,7 @@ function Dicas() {
   return (
     <>
       <Grid container className="corf pd80">
-        <Box display="flex" gap="10px">
+        <Box className="response" display="flex" gap="10px">
           <Card
             style={{ width: "31.8vw", height: "20vw", marginTop: "1vw" }}
             className="carddicas"
@@ -217,7 +217,7 @@ function Dicas() {
           </Card>
         </Box>
         
-        <Box display="flex" gap="10px">
+        <Box className="response" display="flex" gap="10px">
           <Card
             style={{ width: "31.8vw", height: "20vw", marginTop: "1vw" }}
             className="carddicas"
