@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img width="100" src="https://i.imgur.com/QgknDQx.png" alt="VidaPlan">
+  <img width="100" src="https://i.pinimg.com/736x/20/f0/5e/20f05ea4ca8a3264e0126579419f0b72.jpg" alt="VidaPlan">
   
   
 <div align="center">
